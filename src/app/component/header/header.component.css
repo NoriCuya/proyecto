@@ -1,0 +1,30 @@
+/* Contenedor principal del header */
+.header {
+  background: linear-gradient(135deg, #7e5bef, #b084fc); /* Degradado morado de diagonal */
+  color: white; /* Color del texto en blanco */
+  padding: 2rem; /* Espaciado interno mayor */
+  text-align: center; /* Centrar el texto */
+  border-radius: 20px 20px 50px 50px; /* Bordes superiores más redondeados y parte inferior más curvada */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25); /* Sombra más intensa */
+  transform: rotate(-1deg); /* Ligera rotación para darle forma diferente */
+}
+
+/* Estilo del título principal */
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo del subtítulo o descripción */
+.header p {
+  margin: 0.4rem 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.95;
+  border-top: 2px dashed rgba(255,255,255,0.5); /* Línea superior con estilo diferente */
+  padding-top: 0.4rem;
+  margin-top: 0.6rem;
+  font-style: italic;
+}

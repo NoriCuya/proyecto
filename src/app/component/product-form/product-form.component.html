@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="product-form">
+  <input type="text" placeholder="Nombre" [(ngModel)]="name" name="name" required />
+  <div *ngIf="f.submitted && !name">⚠️ El nombre es obligatorio</div>
+
+  <input type="number" placeholder="Precio" [(ngModel)]="price" name="price" required />
+  <div *ngIf="f.submitted && !price">⚠️ El precio es obligatorio</div>
+
+  <input type="text" placeholder="Descripción" [(ngModel)]="description" name="description" required />
+  <select [(ngModel)]="category" name="category" required>
+    <option value="Fruta">Fruta</option>
+    <option value="Verdura">Verdura</option>
+    <option value="Bebida">Bebida</option>
+  </select>
+
+  <input type="number" placeholder="Cantidad" [(ngModel)]="quantity" name="quantity" required min="1" />
+  <div *ngIf="f.submitted && (!quantity || quantity < 1)">⚠️ La cantidad debe ser mayor que 0</div>
+
+  <input type="text" placeholder="URL de imagen" [(ngModel)]="image" name="image" required />
+  <div *ngIf="f.submitted && !image">⚠️ La imagen es obligatoria</div>
+
+  <button type="submit">Agregar Producto</button>
+</form>

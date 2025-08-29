@@ -1,0 +1,78 @@
+/* Contenedor del formulario de productos */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.8rem;
+  border: 2px solid #a78bfa; /* Borde morado claro */
+  border-radius: 20px; /* Bordes más redondeados */
+  background: linear-gradient(135deg, #ede9fe, #f5f3ff); /* Fondo degradado morado muy claro */
+  width: 320px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra suave */
+  transform: rotate(-0.5deg); /* Leve inclinación para romper la simetría */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-form {
+    width: 95%;
+  }
+
+  .product-list {
+    justify-content: center;
+  }
+}
+
+/* Estilos de los inputs del formulario */
+.product-form input,
+.product-form select {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #a78bfa; /* Morado claro */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #faf5ff; /* Fondo morado muy claro */
+  font-size: 0.95rem;
+}
+
+/* Estilos al enfocar los inputs */
+.product-form input:focus,
+.product-form select:focus {
+  border-color: #7c3aed; /* Morado intenso */
+  box-shadow: 0 0 6px rgba(124, 58, 237, 0.5);
+  outline: none;
+}
+
+/* Botón principal del formulario */
+.product-form button {
+  background: linear-gradient(90deg, #7c3aed, #9333ea); /* Degradado morado intenso */
+  color: white;
+  padding: 0.9rem;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.25s, background 0.3s;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.product-form button:hover {
+  background: linear-gradient(90deg, #6d28d9, #7c3aed);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Título del formulario */
+.product-form h2 {
+  margin: 0 0 0.8rem 0;
+  text-align: center;
+  color: #5b21b6; /* Morado oscuro */
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
